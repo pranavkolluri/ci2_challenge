@@ -26,7 +26,7 @@ def image_retrival(image_num):
 #Prompt 1
 def grayscale(image):
     plt.imshow(image, cmap='gray')
-    plt.savefig('pranav_kolluri_1.png', bbox_inches='tight', pad_inches=0.1)
+    plt.savefig('../images/pranav_kolluri_1.png', bbox_inches='tight', pad_inches=0.1)
     plt.show()
     return image
 
@@ -34,7 +34,7 @@ def grayscale(image):
 def inverter(image):
     inverted_image = 1 - image
     plt.imshow(inverted_image, cmap='gray')
-    plt.savefig('pranav_kolluri_2.png', bbox_inches='tight', pad_inches=0.1)
+    plt.savefig('../images/pranav_kolluri_2.png', bbox_inches='tight', pad_inches=0.1)
     plt.show()
 
 #Prompt 3
@@ -43,7 +43,7 @@ def inverter(image):
 def contrast_enhance(image):
     equalized_image = exposure.equalize_hist(image)
     plt.imshow(equalized_image, cmap='gray')
-    plt.savefig('pranav_kolluri_3.png', bbox_inches='tight', pad_inches=0.1)
+    plt.savefig('../images/pranav_kolluri_3.png', bbox_inches='tight', pad_inches=0.1)
     plt.show()
 
 image = image_retrival(42)
